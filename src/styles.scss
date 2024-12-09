@@ -1,0 +1,42 @@
+@layer  primeng, tailwind-base, tailwind-utilities;
+
+@layer tailwind-base {
+  @tailwind base;
+}
+
+@layer tailwind-utilities {
+  @tailwind components;
+  @tailwind utilities;
+}
+
+// @tailwind base;
+// @tailwind components;
+//   @tailwind utilities;
+
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+  
+  margin: 0;
+  padding: 2rem;
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: light-dark(var(--p-surface-0), var(--p-surface-950));
+}
+
+.custom {
+  @apply p-6 text-white bg-blue-500
+}
+
+// p-button {
+//   --p-button-primary-background: var(--p-primary-500);
+// }
+
